@@ -1,0 +1,5 @@
+email[a-z0-9.]+@[a-z0-9.]+\.[a-z]{2,3}
+name[A-Z][a-zA-Z]+
+
+zip index  [0-9]{5}
+zip index  \d{5}

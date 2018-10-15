@@ -1,0 +1,136 @@
+*{
+	margin:0;
+	box-sizing:border-box;
+}
+.container{
+	width:100%;
+	height:100vh;
+	background-color:#584D4A;
+	display:flex;
+	overflow:hidden;
+
+}
+.block{
+	width:204px;
+	height:200px;
+	margin:auto;
+	transform:rotate(45deg)
+
+}
+
+
+div[class^="box"]{
+	width:100px;
+	height:100px;
+	display:inline-block;
+	position:relative;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	animation-duration:4s;
+}
+
+
+@keyframes bg_color{
+    0%{ background-color:#EE4141;}
+    15%{ background-color:#F16B6B;}
+    30%{ background-color:#EE4141;}
+    45%{background-color:#F16B6B;}
+    60%{ background-color:#EE4141;}
+    75%{background-color:#F16B6B;}
+    90%{ background-color:#EE4141;}
+    95%{ background-color:#EE4141;}
+    100%{ background-color:#EE4141;}
+   
+}
+
+@keyframes a_bottom{
+    0%{bottom: 0px;}
+    15%{bottom: 100px;}
+    30%{bottom: 0px;}
+    45%{bottom: 100px;}
+    60%{bottom: 0px;}
+    75%{bottom: 100px;}
+    90%{bottom: 0px; }
+    95%{bottom: 5px;}
+    100%{bottom: 0px;}
+   
+}
+@keyframes a_right{
+    0%{ right:0px; }
+    15%{ right:100px;}
+    30%{ right:0px;}
+    45%{ right:100px;}
+    60%{ right:0px;}
+    75%{ right:100px;}
+    90%{ right:0px; }
+    95%{ right:5px;}
+    100%{ right:0px;}
+   
+}
+@keyframes a_transform{
+    0%{transform:rotate(0deg); }
+    15%{transform:rotate(45deg); }
+    30%{transform:rotate(90deg); }
+    45%{transform:rotate(135deg);}
+    60%{transform:rotate(180deg);}
+    75%{transform:rotate(225deg);}
+    90%{transform:rotate(270deg);}
+    95%{transform:rotate(270deg);}
+    100%{transform:rotate(270deg);}
+   
+}
+@keyframes a_-transform{
+    0%{transform:rotate(0deg); }
+    15%{transform:rotate(-45deg); }
+    30%{transform:rotate(-90deg); }
+    45%{transform:rotate(-135deg);}
+    60%{transform:rotate(-180deg);}
+    75%{transform:rotate(-225deg);}
+    90%{transform:rotate(-270deg);}
+    95%{transform:rotate(-270deg);}
+    100%{transform:rotate(-270deg);}
+   
+}
+
+
+@keyframes a_top{
+    0%{ top:0px; }
+    15%{ top:100px;}
+    30%{ top:0px;}
+    45%{ top:100px;}
+    60%{ top:0px;}
+    75%{ top:100px;}
+    90%{ top:0px; }
+    95%{ top:5px;}
+    100%{ top:0px;}
+}
+
+@keyframes a_left{
+    0%{ left:0px; }
+    15%{ left:100px;}
+    30%{ left:0px;}
+    45%{ left:100px;}
+    60%{ left:0px;}
+    75%{ left:100px;}
+    90%{ left:0px; }
+    95%{ left:5px;}
+    100%{ left:0px;}
+}
+.box_1{
+   
+	animation-name:bg_color, a_transform, a_bottom, a_right;
+}
+
+
+.box_2{
+   animation-name:bg_color, a_-transform, a_bottom, a_left;
+}
+
+.box_3{
+animation-name:bg_color, a_-transform,a_top,a_right;
+}
+.box_4{
+	animation-name:bg_color, a_transform,a_top, a_left;
+}
+
+

@@ -1,0 +1,62 @@
+html{
+	font-size:16px;
+}
+.lorem1{
+	font-family: 'Montserrat', sans-serif;
+	font-size:1.5em;
+	font-weight: 500;
+	line-height: 1.4;
+	letter-spacing: 0.05px;
+	text-align:justify;
+	color:green;
+	text-align-last:right;
+}
+
+
+
+
+.lorem2 p::after { 
+    content: '"';
+}
+.lorem2 p::before { 
+    content: '"';
+}
+.lorem2{
+font-family: 'Roboto', sans-serif;
+	font-size:20px;
+	 text-transform: uppercase;
+}
+
+
+
+
+
+
+.lorem3{
+	font-family: 'Lato', sans-serif;
+	font-size:1.5em;
+}
+.lorem3 p::before { 
+    content: '"';
+	color:red;
+}
+
+.lorem3 p::after { 
+	content: '"';
+	color:red;
+}
+
+
+
+
+li{
+	list-style-type: none;
+}
+li::before{
+	content:'';
+	width:7px;
+	height:7px;
+	background-color:#E64FEB;
+	display:inline-block;
+	margin-right:5px;
+}
